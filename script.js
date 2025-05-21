@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   async function fetchWeather(city) {
-    const apiKey = CONFIG.WEATHER_API_KEY;
+    const apiKey = "c3dbdf013abc7cb25dc1126444424b8e";
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
     const response = await fetch(apiUrl);
     if (!response.ok) {
